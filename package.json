@@ -1,0 +1,23 @@
+{
+  "name": "gulp-import-resolve",
+  "version": "1.0.0",
+  "description": "resolve @import statements in css preprocessors",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DeathMark/gulp-import-resolve.git"
+  },
+  "author": "Tuan Pham",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DeathMark/gulp-import-resolve/issues"
+  },
+  "homepage": "https://github.com/DeathMark/gulp-import-resolve#readme",
+  "devDependencies": {
+    "gulp-util": "^3.0.8",
+    "through2": "^2.0.3"
+  }
+}
