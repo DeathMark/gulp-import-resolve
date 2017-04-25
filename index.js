@@ -13,7 +13,11 @@ function importResolve(content, baseDir) {
 			var parse	= path.parse(path.resolve(baseDir, capture));
 			var file	= parse.dir + '/_' + parse.name;
 
-			if (fs.existsSync(file + '.scss')) {
+			if (fs.existsSync(file + '.sass')) {
+				file	= file + '.sass';
+			} else if (fs.existsSync(file + '.sass.liquid')) {
+				file	= file + '.sass.liquid';
+			} if (fs.existsSync(file + '.scss')) {
 				file	= file + '.scss';
 			} else if (fs.existsSync(file + '.scss.liquid')) {
 				file	= file + '.scss.liquid';
