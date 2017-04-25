@@ -25,9 +25,7 @@ function importResolve(content, baseDir) {
 				return '';
 			}
 
-			var file_contents	= fs.readFileSync(file);
-
-			return file_contents;
+			return fs.readFileSync(file);
 		});
 	}
 
